@@ -13,3 +13,15 @@ export const ContainerText = styled.div`
   font-size: 20px;
   font-weight: 600;
 `;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 30%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f2f3ee52;
+  border-radius: 5px;
+`;

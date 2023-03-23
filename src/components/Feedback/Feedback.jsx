@@ -4,7 +4,7 @@ import { Component } from 'react';
 import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics/Statistics';
 import Notification from './Statistics/Notification';
-import { ContainerBtn, ContainerText } from './Feedback.styled';
+import { Container, ContainerBtn, ContainerText } from './Feedback.styled';
 
 class Feedback extends Component {
   countTotalFeedback() {
@@ -21,7 +21,7 @@ class Feedback extends Component {
     const total = this.countTotalFeedback();
     const percentage = this.countPositiveFeedbackPercentage(total);
     return (
-      <>
+      <Container>
         <Section title="Please leave feedback">
           <ContainerBtn>
             <FeedbackOptions
@@ -46,7 +46,7 @@ class Feedback extends Component {
             )}
           </ContainerText>
         </Section>
-      </>
+      </Container>
     );
   }
 }
